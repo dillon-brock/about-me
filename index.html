@@ -28,24 +28,29 @@
         </section>
         <section class="hidden" id="animal-section">
             <h2 id="animal-name">An Owl</h2>
-            <div class="animal-display">
-                <img id="animal-image" src="/assets/hedwig.jpg">
-            </div>
-            <div class="amimal-inputs">
-                <h2 id="animal-identifier"></h2>
-                <h2>Design This Animal!</h2>
-                <label>
-                    Select Image:
-                    <select id="image-select">
-                        <option value="hedwig.jpg" selected>Hedwig</option>
-                        <option value="errol.jpg">Errol</option>
-                        <option value="pigwidgeon.jpg">Pigwidgeon</option>
-                    </select>
-                </label>
-                <label>
-                    Name:
-                    <input id="name-input">
-                </label>
+            <div class="container">
+                <div class="animal-display">
+                    <p>
+                        <img id="animal-image" src="/assets/hedwig.jpg">
+                    </p>
+                    <p id="name-display">Hedwig</p>
+                </div>
+                <div class="amimal-inputs">
+                    <h2 id="animal-identifier"></h2>
+                    <h2>Design This Animal!</h2>
+                    <label>
+                        Select Image:
+                        <select id="image-select" class="input">
+                            <option value="hedwig.jpg" selected>Hedwig</option>
+                            <option value="errol.jpg">Errol</option>
+                            <option value="pigwidgeon.jpg">Pigwidgeon</option>
+                        </select>
+                    </label>
+                    <label>
+                        Name:
+                        <input id="name-input" class="input" prefilled="Hedwig">
+                    </label>
+                </div>
             </div>
 
         </section>

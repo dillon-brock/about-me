@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --background: rgb(224, 234, 247);
     --header-background: white;
@@ -37,18 +41,35 @@ footer {
 
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+}
+
 .animal-display {
     background: rgb(1, 53, 24);
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    height: 400px;
+    width: 80%;
+    text-align: center;
     border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 #animal-image {
-    height: 250px;
-    width: auto;
-    position: relative;
-    top: 40px;
+    width: 80%;
+}
+
+#name-display {
+    color:antiquewhite;
+    margin-top: 30px;
+    font-size: 1.75rem;
+}
+
+.input {
+    display: block;
+    margin: 30px 0px 30px 0px;
 }
