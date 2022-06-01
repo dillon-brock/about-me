@@ -28,3 +28,27 @@ footer {
     justify-content: flex-end;
     background-color: var(--footer-background);
 }
+
+.intro {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    line-height: 1.1rem;
+
+}
+
+.animal-display {
+    background: rgb(1, 53, 24);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    border-radius: 10px;
+}
+
+#animal-image {
+    height: 250px;
+    width: auto;
+    position: relative;
+    top: 40px;
+}
