@@ -3,6 +3,8 @@
 const tosCheckBox = document.getElementById('tos-checkbox');
 const answerButton = document.getElementById('show-answer-button');
 const animalSection = document.getElementById('animal-section');
+const imageSelector = document.getElementById('image-select');
+const animalImage = document.getElementById('animal-image');
 
 
 
@@ -18,3 +20,8 @@ tosCheckBox.addEventListener('change', () => {
 answerButton.addEventListener('click', () => {
     animalSection.classList.remove('hidden');
 });
+
+imageSelector.addEventListener('change', () => {
+    animalImage.src = `/assets/${imageSelector.value}`;
+});
+
