@@ -5,8 +5,8 @@ const answerButton = document.getElementById('show-answer-button');
 const animalSection = document.getElementById('animal-section');
 const imageSelector = document.getElementById('image-select');
 const animalImage = document.getElementById('animal-image');
-
-
+const nameInput = document.getElementById('name-input');
+const nameDisplay = document.getElementById('name-display');
 
 // set event listeners
     // get info from user input
@@ -23,5 +23,9 @@ answerButton.addEventListener('click', () => {
 
 imageSelector.addEventListener('change', () => {
     animalImage.src = `/assets/${imageSelector.value}`;
+});
+
+nameInput.addEventListener('input', () => {
+    nameDisplay.textContent = nameInput.value;
 });
 
