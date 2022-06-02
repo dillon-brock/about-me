@@ -6,17 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Web UI Project</title>
+    <title>About Me</title>
 </head>
 
 <body>
     <header>
         <img src="assets/html_css_js.png">
-        <h1>Web UI Project</h1>
+        <h1>About Me</h1>
     </header>
 
     <main>
+        <section class="intro">
+            <h2>Intro</h2>
+            <p class="intro-text">My name is Hagrid. I am half man and half giant. I work as the groundskeeper for the Howarts School of Witchcraft and Wizardry, and I teach Care of Magical Creatures there as well. Thanks to the headmaster Albus Dumbledore, I've made Hogwarts my home, and spend my days working to care for the creatures that live at the school as well as those that live in the Forbidden Forest. It is also my job to keep an eye on the forest, and make sure that no students are venturing in unsupervised.</p>
+            <label id="checkbox-label" class="intro-text">
+                <input id = "tos-checkbox" type="checkbox">
+                I solemnly swear that I've read and agreed to the given terms and conditions, and can therefore view the answer.
+            </label>
+            <p class="intro-paragraph">What is my favorite animal?</p>
+            <button id="show-answer-button" disabled>Show Answer</button>
+        </section>
+        <section class="hidden" id="animal-section">
+            <h2 id="animal-name">An Owl</h2>
+            <div class="container">
+                <div class="animal-display">
+                    <p>
+                        <img id="animal-image" src="/assets/hedwig.jpg">
+                    </p>
+                    <p id="name-display">Hedwig</p>
+                </div>
+                <div class="amimal-inputs">
+                    <h2 id="animal-identifier"></h2>
+                    <h2>Design This Animal!</h2>
+                    <label>
+                        Select Image:
+                        <select id="image-select" class="input">
+                            <option value="hedwig.jpg" selected>Hedwig</option>
+                            <option value="errol.jpg">Errol</option>
+                            <option value="pigwidgeon.jpg">Pigwidgeon</option>
+                        </select>
+                    </label>
+                    <label>
+                        Name:
+                        <input id="name-input" class="input" value="Hedwig">
+                    </label>
+                </div>
+            </div>
 
+        </section>
     </main>
 
     <footer>&copy;2021 Aspiring Software Developer</footer>

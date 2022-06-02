@@ -1,3 +1,22 @@
+## Wireframe
+
+![Wireframe](/assets/aboutme_wireframe.jpg)
+
+## States:
+
+- name (from text input)
+- image select (from dropdown menu)
+- checkbox is checked/unchecked
+- animal is hidden/unhidden (from show answer button)
+
+## Events:
+
+- "click" event on show answer button
+- "change" event on TOS checkbox
+- "change" event on dropdown menu
+- "input" event from text input
+
+
 ## The Golden Rule:
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
